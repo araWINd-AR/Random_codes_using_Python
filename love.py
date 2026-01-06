@@ -9,24 +9,26 @@ def draw_math_heart(scale):
     Args:
         scale (float): Controls the overall size of the heart.
     """
-    # 1. Setup
+    #  Setup
     screen = turtle.Screen()
     heart_turtle = turtle.Turtle()
     heart_turtle.pencolor('red')
     heart_turtle.fillcolor('red')
     heart_turtle.pensize(2)
-    heart_turtle.speed(0) # Fastest drawing speed
+    heart_turtle.speed(0)                # Fastest drawing speed
 
-    # 2. Positioning: Start the drawing off-center so the heart is centered
+    #  Positioning : Start the drawing off-center so the heart is centered
     heart_turtle.penup()
     heart_turtle.goto(0, -scale * 2.5) # Move down slightly to center the V-tip
     heart_turtle.pendown()
 
-    # 3. Draw and Fill the Heart using the formula
+    # Draw and Fill the Heart using the formula
     heart_turtle.begin_fill()
     
     # Loop through angles (t) from 0 to 6.28 (approx 2*pi radians)
+    
     # The step (0.1) controls the smoothness and speed
+    
     for t in range(0, 628):
         t = t / 100.0 # Convert the integer loop to floating point radians
 
@@ -41,10 +43,11 @@ def draw_math_heart(scale):
 
     heart_turtle.end_fill()
 
-    # 4. Finish
+    #  Finish
     heart_turtle.hideturtle()
     screen.mainloop()
 
-# --- Call the function to draw your heart ---
+#  Call the function to draw your heart 
 # Use a scale factor of 10 for a visible, centered heart
+
 draw_math_heart(scale=10)
