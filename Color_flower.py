@@ -3,11 +3,6 @@ import turtle
 def draw_enhanced_rosette(sides, repetitions, size):
     """
     Draws a complex, multi-colored rosette pattern.
-
-    Args:
-        sides (int): Number of sides for the inner polygon (e.g., 8).
-        repetitions (int): How many times to repeat the polygon (e.g., 40).
-        size (int): Length of each side of the inner polygon.
     """
     screen = turtle.Screen()
     screen.bgcolor("black") # Use a black background for maximum contrast
@@ -33,13 +28,11 @@ def draw_enhanced_rosette(sides, repetitions, size):
             rosette_turtle.right(turn_angle)
         
         # Rotate the entire turtle slightly before drawing the next polygon
-        # We use a slightly modified turn (repetition_angle + 1) to make the pattern "shift" 
-        # and not just overlap exactly, creating more density.
+      
         rosette_turtle.right(repetition_angle + 1) 
 
     rosette_turtle.hideturtle()
     screen.mainloop()
 
 # --- Call the function for a complex, colorful design ---
-# Use more sides (8) and more repetitions (60) for a denser effect, and a smaller size
 draw_enhanced_rosette(sides=8, repetitions=60, size=40)
