@@ -17,7 +17,7 @@ def draw_rosette(sides, repetitions, size, color):
     
     # Main loop to repeat the polygon
     for _ in range(repetitions):
-        # Inner loop to draw the polygon (e.g., a hexagon or a square)
+        # Inner loop to draw the polygon 
         for _ in range(sides):
             rosette_turtle.forward(size)
             rosette_turtle.right(turn_angle)
@@ -32,3 +32,4 @@ def draw_rosette(sides, repetitions, size, color):
 # Example: Draws a shape made of 36 hexagons, each side 50 units long, in red
 
 draw_rosette(sides=6, repetitions=36, size=50, color='red')
+
