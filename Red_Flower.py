@@ -1,9 +1,6 @@
 import turtle
 
 def draw_rosette(sides, repetitions, size, color):
-    """
-    Draws a flower-like rosette shape by repeating a polygon.
-    """
     screen = turtle.Screen()
     screen.bgcolor("white") 
     rosette_turtle = turtle.Turtle()
@@ -28,8 +25,8 @@ def draw_rosette(sides, repetitions, size, color):
     rosette_turtle.hideturtle()
     screen.mainloop()
 
-# --- Call the function ---
-# Example: Draws a shape made of 36 hexagons, each side 50 units long, in red
+# Call the function 
 
 draw_rosette(sides=6, repetitions=36, size=50, color='red')
+
 
