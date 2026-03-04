@@ -1,9 +1,7 @@
 import turtle
 
 def draw_enhanced_rosette(sides, repetitions, size):
-    """
-    Draws a complex, multi-colored rosette pattern.
-    """
+    
     screen = turtle.Screen()
     screen.bgcolor("black") # Use a black background for maximum contrast
     rosette_turtle = turtle.Turtle()
@@ -36,3 +34,4 @@ def draw_enhanced_rosette(sides, repetitions, size):
 
 # --- Call the function for a complex, colorful design ---
 draw_enhanced_rosette(sides=8, repetitions=60, size=40)
+
